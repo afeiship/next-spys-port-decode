@@ -40,7 +40,7 @@
     with(CODE_MAP){
       result += eval('":" + ' + inString);
     }
-    return result;
+    return result.slice(1);
   };
 
   if (typeof module !== 'undefined' && module.exports) {
