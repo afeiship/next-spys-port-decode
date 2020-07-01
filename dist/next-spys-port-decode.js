@@ -2,8 +2,8 @@
  * name: @feizheng/next-spys-port-decode
  * description: Spys port decode.
  * homepage: https://github.com/afeiship/next-spys-port-decode
- * version: 1.1.0
- * date: 2020-07-01T12:54:11.640Z
+ * version: 1.1.1
+ * date: 2020-07-01T14:31:35.639Z
  * license: MIT
  */
 
@@ -39,10 +39,10 @@
     var result = '';
 
     eval(
-      encFn(inOptions.encKey, 60, 60, inOptions.encValue.split('\u005e'), 0, {})
+      encFn(inOptions.key, 60, 60, inOptions.value.split('\u005e'), 0, {})
     );
 
-    result += eval('":" + ' + inOptions.encCode);
+    result += eval('":" + ' + inOptions.data);
     return result.slice(1);
   };
 

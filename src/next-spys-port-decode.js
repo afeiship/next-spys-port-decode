@@ -30,10 +30,10 @@
     var result = '';
 
     eval(
-      encFn(inOptions.encKey, 60, 60, inOptions.encValue.split('\u005e'), 0, {})
+      encFn(inOptions.key, 60, 60, inOptions.value.split('\u005e'), 0, {})
     );
 
-    result += eval('":" + ' + inOptions.encCode);
+    result += eval('":" + ' + inOptions.data);
     return result.slice(1);
   };
 
